@@ -3,9 +3,11 @@ Package of scripts that were used in the following study: "Abundant capped RNAs 
 
 ./CAGE-seq_processing/ corresponds to all CAGE (K562,HeLa) samples
 
-./eCLIP-RBP_enrichment/ corresponds to Figure 3A, 3B, S3A, S3C
-
 ./Transcriptome_regions/ corresponds to Figure 1A, S1D, S2H
+
+./RNA-seq_processing/ corresponds to Figure 1B, S1G
+
+./eCLIP-RBP_enrichment/ corresponds to Figure 3A, 3B, S3A, S3C
 
 ./motif_analyses/miRNA-seed_sequence_enrichment corresponds to Figure S3G
 
