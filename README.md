@@ -12,3 +12,5 @@ Package of scripts that were used in the following study: "Abundant capped RNAs 
 ./motif_analyses/miRNA-seed_sequence_enrichment corresponds to Figure S3G
 
 ./motif_analyses/GGG-enrichment corresponds to Figure 2C, S2F
+
+./motif_analyses/polyA_sequence_enrichment corresponds to Figure S2C
