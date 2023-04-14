@@ -1,4 +1,5 @@
 #!/bin/bash -l
+
 position=$1 #genomic positions in BED format
 genome=./GRCh38.fa
 
