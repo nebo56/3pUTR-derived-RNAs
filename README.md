@@ -7,6 +7,8 @@ Package of scripts that were used in the following study: "Abundant capped RNAs 
 
 ./RNA-seq_processing/ corresponds to Figure 1B, S1G
 
+./pairing_probability/ corresponds to Figure 2B, S2E
+
 ./eCLIP-RBP_enrichment/ corresponds to Figure 3A, 3B, S3A, S3C
 
 ./CAGE-siRNA-KD-analyses/ corresponds to Figure 3C, 3D, 3E, S3D
