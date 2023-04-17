@@ -15,6 +15,8 @@ Package of scripts that were used in the following study: "Abundant capped RNAs 
 
 ./CAGE-siRNA-KD-analyses/ corresponds to Figure 3C, 3D, 3E, S3D
 
+./RBP_crosslink_RNA_map/ corresponds to Figure 3B, 3F, S2A, S2B, S3J, 
+
 ./motif_analyses/weblogo_per_CAGE_peak corresponds to Figure 2A, S2D
 
 ./motif_analyses/miRNA-seed_sequence_enrichment corresponds to Figure S3G
