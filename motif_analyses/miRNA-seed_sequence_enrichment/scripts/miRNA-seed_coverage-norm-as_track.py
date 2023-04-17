@@ -1,5 +1,5 @@
 '''
-Created on Apr 25, 2014
+Created on Apr 25, 2021
  
 @author: Nejc Haberman
  
@@ -13,7 +13,6 @@ average distribution of kmers
 !!!! each kmer will be done separately and exported into separate file !!!
  
 !!!! here motif file contains 3 columns: motif, strand, miRNA name
-
 
 input:
 - input_fasta
