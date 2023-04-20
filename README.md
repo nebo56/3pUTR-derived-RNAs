@@ -1,5 +1,5 @@
 # 3pUTR-derived-RNAs
-Package of scripts that were used in the following study: "Abundant capped RNAs are derived from mRNA cleavage at 3’UTR G-Quadruplexes".
+This repository contains the scripts used to produce the figures for the following study: "Abundant capped RNAs are derived from mRNA cleavage at 3’UTR G-Quadruplexes".
 
 ./CAGE-seq_processing/ corresponds to all CAGE (K562, HeLa) samples
 
