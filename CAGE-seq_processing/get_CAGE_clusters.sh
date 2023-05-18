@@ -17,8 +17,8 @@ python2 ./scripts/BEDsum.py ${path}${bam1}.5p.bed ${path}${bam1}.5p.sum.bed
 python2 ./scripts/BEDsum.py ${path}${bam2}.5p.bed ${path}${bam2}.5p.sum.bed
 
 # remove single sites
-python2 ./scripts/filterBEDbyCounts.py ${path}${bam1}.5p.bed 2 ${path}${bam1}.5p.sum-2min.bed
-python2 ./scripts/filterBEDbyCounts.py ${path}${bam2}.5p.bed 2 ${path}${bam2}.5p.sum-2min.bed
+python2 ./scripts/filterBEDbyCounts.py ${path}${bam1}.5p.sum.bed 2 ${path}${bam1}.5p.sum-2min.bed
+python2 ./scripts/filterBEDbyCounts.py ${path}${bam2}.5p.sum.bed 2 ${path}${bam2}.5p.sum-2min.bed
 
 # merge replicates for clustering
 cat ${path}${bam1}.5p.sum-2min.bed ${path}${bam2}.5p.sum-2min.bed | sort -k1,1 -k2,2n -k6,6 > ${path}${bam1}.${bam2}.merged.5p-2min.bed
