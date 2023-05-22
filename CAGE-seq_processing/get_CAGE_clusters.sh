@@ -24,7 +24,7 @@ python2 ./scripts/filterBEDbyCounts.py ${path}${bam2}.5p.sum.bed 2 ${path}${bam2
 cat ${path}${bam1}.5p.sum-2min.bed ${path}${bam2}.5p.sum-2min.bed | sort -k1,1 -k2,2n -k6,6 > ${path}${bam1}.${bam2}.merged.5p-2min.bed
 
 # get clusters in 20 nt window
-bedtools merge -s -d 20 -i ${path}${bam1}.${bam2}.merged.5p-2min.bed | awk '{print $1 "\t" $2 "\t" $3 "\t.\t.\t" $4}' > ${path}${bam1}.${bam2}.merged.5p-2min-merged20nt.bed
+bedtools merge -s -d 20 -c 6 -o distinct -i ${path}${bam1}.${bam2}.merged.5p-2min.bed | awk '{print $1 "\t" $2 "\t" $3 "\t.\t.\t" $4}' > ${path}${bam1}.${bam2}.merged.5p-2min-merged20nt.bed
 
 # find max CAGE 5' read peak per cluster
 bedtools intersect -s -a ${path}${bam1}.${bam2}.merged.5p-2min.bed -b ${path}${bam1}.${bam2}.merged.5p-2min-merged20nt.bed -wb > ${path}${bam1}.${bam2}.merged.5p-2min-merged20nt-peaks.bed
