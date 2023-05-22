@@ -28,14 +28,14 @@ def BEDsum(fname_in, fname_out):
         if lastChr == None or (lastChr == chr and lastStart == start and lastEnd == end and lastStrand == strand):
             cDNAsum += int(cDNA)
         else:
-            fout.write(lastChr + '\t' + lastStart + '\t' +  lastEnd + '\t' + str(cDNAsum) + '\t' + ' ' + '\t' + lastStrand + '\n')
+            fout.write(lastChr + '\t' + lastStart + '\t' +  lastEnd + '\t' + str(cDNAsum) + '\t.\t' + lastStrand + '\n')
             cDNAsum = int(cDNA)
         lastChr = chr
         lastStart = start
         lastEnd = end
         lastStrand = strand
         line = fin.readline()
-    fout.write(lastChr + '\t' + lastStart + '\t' +  lastEnd + '\t' + str(cDNAsum) + '\t' + ' ' + '\t' + lastStrand + '\n')
+    fout.write(lastChr + '\t' + lastStart + '\t' +  lastEnd + '\t' + str(cDNAsum) + '\t.\t' + lastStrand + '\n')
     fout.close()
     fin.close()
 
