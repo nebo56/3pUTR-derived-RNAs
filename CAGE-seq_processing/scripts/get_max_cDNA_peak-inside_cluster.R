@@ -7,11 +7,11 @@ colnames(peaks)[1] <- "read.chr"
 colnames(peaks)[2] <- "read.start"
 colnames(peaks)[3] <- "read.end"
 colnames(peaks)[4] <- "read.count"
-colnames(peaks)[5] <- "read.strand"
-colnames(peaks)[6] <- "cluster.chr"
-colnames(peaks)[7] <- "cluster.start"
-colnames(peaks)[8] <- "cluster.end"
-colnames(peaks)[11] <- "cluster.strand"
+colnames(peaks)[6] <- "read.strand"
+colnames(peaks)[7] <- "cluster.chr"
+colnames(peaks)[8] <- "cluster.start"
+colnames(peaks)[9] <- "cluster.end"
+colnames(peaks)[12] <- "cluster.strand"
 
 # select max peak
 max.peaks <-aggregate(peaks$read.count, list(peaks$cluster.chr, peaks$cluster.start, peaks$cluster.end, peaks$cluster.strand), FUN=max, na.rm=TRUE)
@@ -22,7 +22,7 @@ colnames(max.peaks)[4] <- "cluster.strand"
 colnames(max.peaks)[5] <- "read.count"
 
 max.peaks.positions <- merge(max.peaks, peaks, by=c("cluster.chr","cluster.start","cluster.end","cluster.strand","read.count"), all.x=TRUE)
-max.peaks.positions <- max.peaks.positions[c("read.chr", "read.start","read.end","read.count","V9","read.strand")]
+max.peaks.positions <- max.peaks.positions[c("read.chr", "read.start","read.end","read.count","V10","read.strand")]
 
 write.table(max.peaks.positions,  args[2], row.names=FALSE, sep="\t", quote=FALSE)
 
