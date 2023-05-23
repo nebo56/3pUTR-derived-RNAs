@@ -4,7 +4,7 @@ Created on Mar 16, 2014
 @author: Nejc Haberman
 
 
-Script will sum together BED but BED needs to be sorted.
+Script will sum together BED but BED needs to be sorted and each line will be counted as 1.
 '''
 
 import sys
